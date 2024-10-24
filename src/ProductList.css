@@ -67,7 +67,7 @@ body {
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 5%;
     text-align: center;
     position: relative;
     
@@ -95,6 +95,7 @@ body {
 .product-image {
     max-width: 100%;
     height: 200px; /* Adjust height for better consistency */
+    border-radius: 5%;
 }
 
 .product-button {
@@ -120,7 +121,7 @@ body {
     top: 0;
     right: 0;
     padding: 5px 10px;
-    border-radius: 0 0 0 5px;
+    border-radius: 5%;
 }
 .tag_home_link{
     display: flex;
