@@ -252,10 +252,9 @@ function ProductList() {
         setShowCart(false); // Hide the cart when navigating to About Us
     };
 
-    const handleContinueShopping = (e) => {
-        e.preventDefault();
+    const handleContinueShopping = () => {
         setShowCart(false); // Set showCart to false when "Continue Shopping" button is clicked
-        console.log("Setting showCart to false in ProductList");
+        setShowPlants(true);
     };
 
     const handleAddToCart = (plant) => {
