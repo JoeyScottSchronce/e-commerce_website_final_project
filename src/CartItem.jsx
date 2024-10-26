@@ -64,7 +64,7 @@ const CartItem = ({ onContinueShopping }) => { // DO NOT MODIFY THIS LINE
         ))}
       </div>
       <div style={{ marginTop: '20px', color: 'black' }} className='total_cart_amount'></div>
-      <div className="continue_shopping_btn">
+      <div className="continue_shopping_btn" style={{ paddingBottom: '100px' }}>
         <button className="get-started-button" onClick={handleContinueShopping}>Continue Shopping</button>
         <br />
         <button className="get-started-button1" onClick={(e) => handleCheckoutShopping(e)}>Checkout</button>
