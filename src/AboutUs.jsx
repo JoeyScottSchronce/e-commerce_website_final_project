@@ -7,7 +7,7 @@ function AboutUs() {
       {/* <h1 className="about-us-heading">About Us</h1> */}
       <p className="about-us-description" style={{ fontSize: '40px' }}>Welcome to Haven Greenery!</p>
       <p className="about-us-content">
-        We offer quality plants to enhance beauty and promote a peaceful environment
+        We offer quality plants to enhance beauty and promote a peaceful environment.
       </p>
       {/* <p className="plant_logo_left"><img src="https://p1.hiclipart.com/preview/922/979/640/green-leaf-logo-emoji-seedling-emoticon-sticker-plant-plant-stem-flower-png-clipart-thumbnail.jpg" height='50px' width='50px' alt="" /></p> */}
       <p className="about-us-content">
