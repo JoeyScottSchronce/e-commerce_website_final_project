@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import './ProductList.css'
 import CartItem from './CartItem';
-import { useSelector } from 'react-redux';
-import { addItem } from './CartSlice';
+import { addItem, removeItem, selectCartItems } from './CartSlice';
 import { selectCartItemCount } from './CartSlice';
 
 function ProductList() {
@@ -12,6 +11,8 @@ function ProductList() {
     const dispatch = useDispatch();
     const [addedToCart, setAddedToCart] = useState({}); // State to track added products
     const cartItemCount = useSelector(selectCartItemCount); // Get the cart item count from the store
+    const cartItems = useSelector(selectCartItems); // This should retrieve items from the Redux store
+
 
     const plantsArray = [
         {
@@ -179,6 +180,14 @@ function ProductList() {
         setShowCart(false); // Set showCart to false when "Continue Shopping" button is clicked
         setShowPlants(true);
     };
+
+    useEffect(() => {
+        const updatedAddedToCart = {};
+        cartItems.forEach(item => {
+            updatedAddedToCart[item.name] = true;
+        });
+        setAddedToCart(updatedAddedToCart);
+    }, [cartItems]);
 
     const handleAddToCart = (plant) => {
         dispatch(addItem(plant));
