@@ -203,7 +203,7 @@ function ProductList() {
                 <div className="tag">
                     <div className="luxury" style={{ paddingRight: '40px' }}>
                         <img src="https://cdn.pixabay.com/photo/2012/08/06/00/53/bridge-53769_1280.jpg" alt="logo" />
-                        <a href="/" style={{ textDecoration: 'none' }}>
+                        <a href="/e-commerce_website_final_project" style={{ textDecoration: 'none' }}>
                             <div style={{ paddingLeft: '20px' }}>
                                 <h3 style={{ color: 'white' }}>Haven Greenery</h3>
                                 <i style={{ color: 'white' }}>Your Greenery Haven Awaits</i>
