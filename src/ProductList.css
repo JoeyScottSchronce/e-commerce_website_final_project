@@ -82,7 +82,7 @@ body {
 /* Pseudo-classes - Hover effect on product button */
 .product-card:hover {
     transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.15s ease-in-out;
     z-index: 1;
 }
 
@@ -110,8 +110,7 @@ body {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    margin-top: 10px;
+    transition: background-color 0.15s ease-in-out;
 }
 
 /* Pseudo-elements - Sale badge:        content: "SALE"; background-color: #e74c3c; */
