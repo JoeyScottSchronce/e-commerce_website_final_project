@@ -12,9 +12,9 @@
     "preview": "vite build; vite preview --host"
   },
   "dependencies": {
+    "react-dom": "^18.3.1",
     "react": "^18.3.1",
     "@reduxjs/toolkit": "^2.6.0",
-    "react-dom": "^18.2.0",
     "react-redux": "^9.2.0"
   },
   "devDependencies": {
